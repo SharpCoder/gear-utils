@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>Gear Utils</title>
+    <style type="text/css">
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .input-box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-box input {
+            margin: 10px;
+            padding: 2px;
+            max-width: 100px;
+        }
+
+        .input-box label {
+            width: 260px;
+            text-align: right;
+        }
+
+        .input-box button {
+            width: 250px;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        .box {
+            display: flex;
+        }
+
+        .result-line {
+            padding: 4px;
+        }
+
+        #output {
+            padding: 20px;
+            flex-grow: 1;
+            margin: 0px 50px;
+        }
+
+        #output #calcs {
+            font-weight: bold;
+            color: red;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body onload="onLoad()">
+    <h3>gear mesh stats</h3>
+    <div class='box'>
+        <div class='input-box'>
+            <label>
+                Diametral Pitch
+                <input type="text" id="P" value='24' />
+            </label>
+
+            <label>
+                Pressure Angle
+                <input type="text" id="pa" value='20' />
+            </label>
+
+            <label>
+                N1
+                <input type="text" id="N1" value='24' />
+            </label>
+
+            <label>
+                N2
+                <input type="text" id="N2" value='36' />
+            </label>
+            <Button id='submit'>Compute</Button>
+        </div>
+        <div id="output"></div>
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
