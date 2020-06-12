@@ -56,4 +56,6 @@ function onLoad() {
 
         $output.innerHTML = text;
     }
+
+    $submit.onclick();
 }
